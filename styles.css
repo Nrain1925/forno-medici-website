@@ -258,3 +258,26 @@ tbody td:first-child { font-weight: 700; }
 .benefits li{
   margin-bottom:8px;
 }
+.dough-gallery{
+  background:#fcf8f2;
+}
+
+.dough-grid{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.dough-grid img{
+  width:100%;
+  border-radius:22px;
+  object-fit:cover;
+  height:260px;
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
+  transition:.4s;
+}
+
+.dough-grid img:hover{
+  transform:scale(1.03);
+}
