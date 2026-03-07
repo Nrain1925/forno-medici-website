@@ -178,19 +178,19 @@ img {
   overflow: hidden;
 }
 
-.hero-bg {
-  opacity: 0.35;
-}
+.hero-bg img{
+  filter:brightness(.85) contrast(1.05);
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
     90deg,
-    rgba(247, 241, 232, 0.94) 0%,
-    rgba(247, 241, 232, 0.8) 38%,
-    rgba(247, 241, 232, 0.52) 100%
+    rgba(0,0,0,.65) 0%,
+    rgba(0,0,0,.45) 35%,
+    rgba(0,0,0,.18) 70%,
+    rgba(0,0,0,0) 100%
   );
 }
 
