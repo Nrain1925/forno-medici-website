@@ -281,3 +281,140 @@ tbody td:first-child { font-weight: 700; }
 .dough-grid img:hover{
   transform:scale(1.03);
 }
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f6efe4 0%, #fbf7f0 45%, #efe2cf 100%);
+  padding: 40px 0 70px;
+}
+
+.hero-bg-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.22;
+  filter: saturate(0.95) contrast(1.02);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(247,241,232,0.94) 0%, rgba(247,241,232,0.80) 38%, rgba(247,241,232,0.52) 100%);
+}
+
+.luxury-hero {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 720px;
+}
+
+.hero-copy h1 {
+  margin-top: 12px;
+  font-size: clamp(52px, 6vw, 78px);
+  line-height: 0.96;
+  color: #211712;
+}
+
+.hero-copy p {
+  margin-top: 20px;
+  max-width: 680px;
+  font-size: 18px;
+  color: #5e544d;
+}
+
+.hero-side-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.side-tall {
+  height: 360px;
+}
+
+.hero-side-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.side-small {
+  height: 210px;
+}
+
+.dough-feature-strip {
+  background: #fcf8f2;
+  border-top: 1px solid rgba(36, 29, 24, 0.08);
+  border-bottom: 1px solid rgba(36, 29, 24, 0.08);
+}
+
+.dough-feature-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.dough-feature-image {
+  height: 340px;
+}
+
+.dough-feature-copy h2 {
+  margin-top: 10px;
+  font-size: clamp(38px, 5vw, 56px);
+  color: #241914;
+}
+
+.dough-feature-copy p {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #6b6159;
+  max-width: 700px;
+}
+
+@media (max-width: 1080px) {
+  .luxury-hero,
+  .dough-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-side-stack {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 28px 0 56px;
+  }
+
+  .hero-side-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .side-tall,
+  .side-small,
+  .dough-feature-image {
+    height: 260px;
+  }
+
+  .hero-copy h1 {
+    font-size: 44px;
+  }
+}
