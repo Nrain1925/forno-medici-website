@@ -839,3 +839,8 @@ tbody td:first-child {
 .photo-card:hover img {
   transform: scale(1.05);
 }
+.brand-logo-large{
+  height:64px;
+  width:auto;
+  display:block;
+}
