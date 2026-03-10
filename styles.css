@@ -844,3 +844,9 @@ tbody td:first-child {
   width:auto;
   display:block;
 }
+.photo-card{
+  width:100%;
+  border-radius:24px;
+  object-fit:cover;
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
