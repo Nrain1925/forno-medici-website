@@ -57,12 +57,12 @@ img {
   backdrop-filter: blur(6px);
 }
 
-.nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 16px 0;
+.nav-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:18px 0;
 }
 
 .brand {
