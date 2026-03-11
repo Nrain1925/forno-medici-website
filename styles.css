@@ -135,13 +135,21 @@ img {
   background: #cda35c;
 }
 
-.btn-dark {
-  background: var(--dark);
-  color: #fff;
+.btn-dark{
+  background:#2b1f14;
+  color:white;
+
+  padding:10px 18px;
+  border-radius:10px;
+
+  font-weight:600;
+
+  transition:all .25s ease;
 }
 
-.btn-dark:hover {
-  background: #000;
+.btn-dark:hover{
+  background:#3a2a1d;
+  transform:translateY(-2px);
 }
 
 .btn-outline {
@@ -982,4 +990,20 @@ tbody td:first-child {
 .gallery-grid{
   display:grid;
   gap:24px;
+}
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+
+  width:0%;
+  height:2px;
+
+  background:#c8a46a;  /* gold accent */
+  transition:width .3s ease;
+}
+
+.nav-links a:hover::after{
+  width:100%;
 }
