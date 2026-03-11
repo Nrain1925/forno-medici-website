@@ -66,10 +66,13 @@ img {
   gap: 14px;
 }
 
-.brand-logo-large {
-  height: 72px;
-  width: auto;
-  display: block;
+.brand-logo-large{
+  height:80px;
+  width:auto;
+}
+
+.nav-wrap{
+  padding:18px 0;
 }
 
 .brand-name {
