@@ -72,10 +72,10 @@ img {
 }
 
 .brand-logo-large{
-  height: 120px !important;
+  height: 110px !important;
   width: auto !important;
-  max-width: none !important;
   display: block;
+  max-width: none !important;
 }
 
 .nav-wrap{
