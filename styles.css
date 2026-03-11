@@ -960,8 +960,8 @@ tbody td:first-child {
 }
 .gallery-grid img{
   width:100%;
-  height:260px;       /* forces all images same height */
-  object-fit:cover;   /* crops instead of stretching */
-  border-radius:22px;
+  height:260px;
+  object-fit:cover;
+  border-radius:20px;
   display:block;
 }
