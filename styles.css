@@ -878,3 +878,9 @@ tbody td:first-child {
   border-radius:22px;
   box-shadow:0 20px 50px rgba(0,0,0,0.15);
 }
+.product-layout img{
+  width:100%;
+  border-radius:26px;
+  object-fit:cover;
+  box-shadow:0 25px 60px rgba(0,0,0,0.15);
+}
