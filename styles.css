@@ -99,8 +99,14 @@ img {
   color: #3f3832;
 }
 
-.nav-links a:hover {
-  color: #000;
+.nav-links a{
+  font-weight:500;
+  color:#2d2620;
+
+  margin:0 18px;
+  text-decoration:none;
+
+  position:relative;
 }
 
 .btn {
