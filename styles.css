@@ -948,3 +948,13 @@ tbody td:first-child {
   filter:brightness(1.05);
   box-shadow:0 25px 60px rgba(0,0,0,.25);
 }
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
