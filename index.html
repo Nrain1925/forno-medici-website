@@ -535,18 +535,27 @@
           </ul>
         </div>
 
-        <form class="contact-card" onsubmit="event.preventDefault(); alert('Form submitted. Connect this form to your email or form service after launch.');">
-          <h3>Request Samples</h3>
-          <input type="text" placeholder="Full name" required>
-          <input type="text" placeholder="Company name">
-          <input type="email" placeholder="Email address" required>
-          <input type="tel" placeholder="Phone number">
-          <textarea placeholder="Tell us about your operation, product needs, or distribution interest"></textarea>
-          <button class="btn btn-dark" type="submit">Submit Inquiry</button>
-        </form>
-      </div>
-    </section>
-  </main>
+<form class="contact-card" action="https://formspree.io/f/xojkwklw" method="POST">
+  <h3>Request Samples or Product Information</h3>
+  <p class="form-helper">Tell us about your operation, volume needs, or distribution interest.</p>
+
+  <input type="text" name="name" placeholder="Full name" required>
+  <input type="text" name="company" placeholder="Restaurant / Company name">
+  <input type="email" name="email" placeholder="Email address" required>
+  <input type="tel" name="phone" placeholder="Phone number">
+  <input type="text" name="location" placeholder="City / State">
+
+  <select name="inquiry_type">
+    <option value="">Inquiry type</option>
+    <option>Request Samples</option>
+    <option>Product Specs</option>
+    <option>Distribution Inquiry</option>
+    <option>General Sales Inquiry</option>
+  </select>
+
+  <textarea name="message" placeholder="Tell us about your operation, product needs, or distribution interest"></textarea>
+  <button class="btn btn-dark" type="submit">Submit Inquiry</button>
+</form>
 
   <footer class="site-footer">
     <div class="container footer-wrap">
