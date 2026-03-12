@@ -823,19 +823,20 @@ tbody td:first-child {
   background: linear-gradient(135deg, #f2e0c1 0%, #f8efe2 40%, #f0dfc5 100%);
 }
 
-.contact-card {
-  background: #fff;
+.contact-card select{
+  width: 100%;
   border: 1px solid var(--line);
-  border-radius: 28px;
-  padding: 38px;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 16px;
+  border-radius: 18px;
+  padding: 15px 16px;
+  font: inherit;
+  background: #fcfaf6;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact-card h3 {
-  margin: 0 0 6px;
-  font-size: 1.7rem;
+.contact-card select:focus{
+  outline: none;
+  border-color: #c8a46a;
+  box-shadow: 0 0 0 3px rgba(200, 164, 106, 0.16);
 }
 
 .form-helper {
