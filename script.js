@@ -23,3 +23,12 @@ window.addEventListener("scroll", () => {
   });
 
 });
+const accordions = document.querySelectorAll(".accordion-item");
+
+accordions.forEach((item) => {
+  const button = item.querySelector(".accordion-toggle");
+
+  button.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
