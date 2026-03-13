@@ -29,6 +29,14 @@ accordions.forEach((item) => {
   const button = item.querySelector(".accordion-toggle");
 
   button.addEventListener("click", () => {
-    item.classList.toggle("active");
+    const isActive = item.classList.contains("active");
+
+    accordions.forEach((other) => {
+      other.classList.remove("active");
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+    }
   });
 });
