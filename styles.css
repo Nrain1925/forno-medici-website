@@ -1069,3 +1069,15 @@ tbody td:first-child {
     width: auto;
   }
 }
+.video-card {
+  overflow: hidden;
+}
+
+.feature-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 28px;
+  background: #000;
+}
