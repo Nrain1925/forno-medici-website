@@ -1012,19 +1012,35 @@ tbody td:first-child {
   }
 
   .section {
-    padding: 72px 0;
+    padding: 64px 0;
   }
 
   .hero {
-    padding: 28px 0 56px;
+    padding: 24px 0 48px;
   }
 
   .hero-copy {
-    padding: 22px;
+    padding: 20px;
   }
 
   .hero-copy h1 {
-    font-size: 44px;
+    font-size: 38px;
+    line-height: 1.02;
+  }
+
+  .hero-copy p,
+  .hero-support {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
   }
 
   .hero-side-bottom,
@@ -1039,11 +1055,16 @@ tbody td:first-child {
   .side-tall,
   .side-small,
   .dough-feature-image {
-    height: 260px;
+    height: 240px;
   }
 
   .brand-logo-large {
-    height: 90px !important;
+    height: 72px !important;
+  }
+
+  .nav-wrap {
+    min-height: 64px;
+    padding: 6px 0;
   }
 
   .footer-wrap {
@@ -1051,19 +1072,10 @@ tbody td:first-child {
     align-items: flex-start;
   }
 
-  .serve-panel,
-  .case-panel .eyebrow,
-  .case-panel h2 {
-    padding-inline: 22px;
-  }
-
-  .case-panel h2 {
-    padding-bottom: 0;
-  }
-
   .contact-card {
-    padding: 28px;
+    padding: 24px;
   }
+}
 
   .btn {
     width: auto;
