@@ -23,20 +23,24 @@ window.addEventListener("scroll", () => {
   });
 
 });
-const accordions = document.querySelectorAll(".accordion-item");
+const accordionGroups = document.querySelectorAll(".accordion-group");
 
-accordions.forEach((item) => {
-  const button = item.querySelector(".accordion-toggle");
+accordionGroups.forEach((group) => {
+  const items = group.querySelectorAll(".accordion-item");
 
-  button.addEventListener("click", () => {
-    const isActive = item.classList.contains("active");
+  items.forEach((item) => {
+    const button = item.querySelector(".accordion-toggle");
 
-    accordions.forEach((other) => {
-      other.classList.remove("active");
+    button.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      items.forEach((other) => {
+        other.classList.remove("active");
+      });
+
+      if (!isActive) {
+        item.classList.add("active");
+      }
     });
-
-    if (!isActive) {
-      item.classList.add("active");
-    }
   });
 });
