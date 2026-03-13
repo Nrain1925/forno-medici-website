@@ -1019,3 +1019,78 @@ tbody td:first-child {
     height: 90px !important;
   }
 }
+.accordion {
+  margin-top: 34px;
+  display: grid;
+  gap: 14px;
+}
+
+.accordion-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.accordion-toggle {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 20px 22px;
+  text-align: left;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-toggle::after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: var(--gold-dark);
+}
+
+.accordion-item.active .accordion-toggle::after {
+  content: "–";
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 22px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 0 22px 20px;
+}
+
+.accordion-content p,
+.accordion-content li {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-card select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 15px 16px;
+  font: inherit;
+  background: #fcfaf6;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card select:focus {
+  outline: none;
+  border-color: #c8a46a;
+  box-shadow: 0 0 0 3px rgba(200, 164, 106, 0.16);
+}
