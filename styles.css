@@ -1022,61 +1022,79 @@ tbody td:first-child {
 .accordion {
   margin-top: 34px;
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .accordion-item {
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 22px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 24px 55px rgba(34, 23, 16, 0.12);
+  transform: translateY(-2px);
+}
+
+.accordion-item.active {
+  border-color: rgba(200, 164, 106, 0.35);
+  box-shadow: 0 24px 55px rgba(34, 23, 16, 0.12);
 }
 
 .accordion-toggle {
   width: 100%;
   background: #fff;
   border: none;
-  padding: 20px 22px;
+  padding: 22px 24px;
   text-align: left;
   font: inherit;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.02rem;
   color: var(--text);
   cursor: pointer;
   position: relative;
 }
 
 .accordion-toggle::after {
-  content: "+";
+  content: "›";
   position: absolute;
-  right: 22px;
+  right: 24px;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 22px;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 28px;
+  font-weight: 400;
   color: var(--gold-dark);
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .accordion-item.active .accordion-toggle::after {
-  content: "–";
+  transform: translateY(-50%) rotate(-90deg);
+  color: #7e5520;
 }
 
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 22px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 24px;
 }
 
 .accordion-item.active .accordion-content {
   max-height: 500px;
-  padding: 0 22px 20px;
+  padding: 0 24px 22px;
 }
 
 .accordion-content p,
 .accordion-content li {
   color: var(--muted);
   line-height: 1.8;
+}
+
+.accordion-content strong {
+  color: var(--text);
 }
 
 .contact-card select {
