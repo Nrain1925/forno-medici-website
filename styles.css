@@ -1019,7 +1019,7 @@ tbody td:first-child {
     height: 90px !important;
   }
 }
-.accordion {
+.accordion-group {
   margin-top: 34px;
   display: grid;
   gap: 16px;
