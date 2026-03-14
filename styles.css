@@ -106,7 +106,18 @@ video {
 .nav-links a:hover::after {
   width: 100%;
 }
+.nav-links a.active {
+  color: #9c6d2c;
+  font-weight: 700;
+}
 
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  text-shadow: 0 0 0.01px currentColor;
+}
 /* Buttons */
 
 .btn {
