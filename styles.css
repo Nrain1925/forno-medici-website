@@ -1226,3 +1226,45 @@ tbody td:first-child {
     padding: 24px;
   }
 }
+.footer-links {
+  display: flex;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.78);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(216, 176, 108, 0.12);
+  border: 1px solid rgba(216, 176, 108, 0.35);
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.social-icon:hover {
+  background: rgba(216, 176, 108, 0.2);
+  border-color: rgba(216, 176, 108, 0.6);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(216, 176, 108, 0.18);
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #e3bd7a;
+}
