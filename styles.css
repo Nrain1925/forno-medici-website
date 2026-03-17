@@ -1068,10 +1068,16 @@ tbody td:first-child {
   gap: 20px;
   color: rgba(255, 255, 255, 0.78);
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-links a {
+  transition: color 0.25s ease, opacity 0.25s ease;
 }
 
 .footer-links a:hover {
   color: #fff;
+  opacity: 1;
 }
 
 /* Reveal */
