@@ -48,11 +48,13 @@ video {
 
 /* Header */
 
+/* Header */
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(246, 239, 231, 0.96);
+  background: rgba(246, 239, 231, 0.97);
   border-bottom: 1px solid var(--line);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   backdrop-filter: blur(8px);
@@ -62,9 +64,10 @@ video {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 24px;
-  min-height: 96px;
-  padding: 14px 0;
+  gap: 22px;
+  min-height: 112px;
+  padding: 12px 0;
+  position: relative;
 }
 
 .brand {
@@ -78,7 +81,7 @@ video {
 }
 
 .brand-logo-large {
-  height: 72px;
+  height: 96px;
   width: auto;
   display: block;
   max-width: none;
@@ -147,6 +150,79 @@ video {
 
 .nav-links .btn::after {
   display: none;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 10px 24px rgba(34, 23, 16, 0.08);
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #2b1f14;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu {
+  display: none;
+  border-top: 1px solid var(--line);
+  background: rgba(252, 248, 242, 0.98);
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu-links {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  gap: 8px;
+  padding: 16px 0 20px;
+}
+
+.mobile-menu-links a {
+  padding: 12px 4px;
+  font-weight: 600;
+  color: #2d2620;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mobile-menu-links a.active {
+  color: var(--gold-dark);
+}
+
+.mobile-menu-links .mobile-cta {
+  margin-top: 8px;
+  width: 100%;
+  border-bottom: none;
 }
 
 /* Buttons */
