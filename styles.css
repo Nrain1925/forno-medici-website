@@ -81,7 +81,7 @@ video {
 }
 
 .brand-logo-large {
-  height: 96px;
+  height: 112px;
   width: auto;
   display: block;
   max-width: none;
@@ -1154,11 +1154,23 @@ tbody td:first-child {
   }
 }
 
-@media (max-width: 760px) {
-  .nav-wrap.nav-centered {
-    min-height: 84px;
-    padding: 10px 0;
+@media (max-width: 1240px) {
+  .brand-logo-large {
+    height: 96px;
   }
+}
+
+@media (max-width: 1080px) {
+  .brand-logo-large {
+    height: 88px;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-logo-large {
+    height: 74px;
+  }
+}
 
   .brand-logo-large {
     height: 72px;
