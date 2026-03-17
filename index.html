@@ -39,7 +39,7 @@
 <body>
 <header class="site-header">
   <div class="container nav-wrap nav-centered">
-    <nav class="nav-links nav-left">
+    <nav class="nav-links nav-left desktop-nav" aria-label="Primary left navigation">
       <a href="index.html" class="active">Home</a>
       <a href="products.html">Products</a>
       <a href="foodservice.html">Foodservice</a>
@@ -49,10 +49,33 @@
       <img src="Forno-Medici-NewLogo.png" alt="Forno Medici Foods Logo" class="brand-logo-large" />
     </a>
 
-    <nav class="nav-links nav-right">
+    <nav class="nav-links nav-right desktop-nav" aria-label="Primary right navigation">
       <a href="handling-performance.html">Handling &amp; Performance</a>
       <a href="contact.html">Contact</a>
       <a class="btn btn-dark btn-small nav-cta" href="contact.html">Request Samples</a>
+    </nav>
+
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu-links" aria-label="Mobile navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="foodservice.html">Foodservice</a>
+      <a href="handling-performance.html">Handling &amp; Performance</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-dark mobile-cta" href="contact.html">Request Samples</a>
     </nav>
   </div>
 </header>
