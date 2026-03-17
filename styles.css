@@ -48,8 +48,6 @@ video {
 
 /* Header */
 
-/* Header */
-
 .site-header {
   position: sticky;
   top: 0;
@@ -65,7 +63,7 @@ video {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 22px;
-  min-height: 112px;
+  min-height: 126px;
   padding: 12px 0;
   position: relative;
 }
@@ -81,7 +79,7 @@ video {
 }
 
 .brand-logo-large {
-  height: 112px;
+  height: 132px;
   width: auto;
   display: block;
   max-width: none;
@@ -289,7 +287,8 @@ video {
   text-transform: uppercase;
 }
 
-.hero .eyebrow.accent {
+.hero .eyebrow.accent,
+.accent {
   color: #f0c878;
 }
 
@@ -465,6 +464,7 @@ video {
   margin: 0 auto 8px;
 }
 
+.section-heading h1,
 .section-heading h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 12px 0 0;
@@ -662,8 +662,7 @@ video {
 }
 
 .image-stack,
-.wrapped-stack,
-.story-images {
+.wrapped-stack {
   display: grid;
   gap: 18px;
 }
@@ -1104,7 +1103,7 @@ tbody td:first-child {
   }
 
   .brand-logo-large {
-    height: 86px;
+    height: 112px;
   }
 }
 
@@ -1133,7 +1132,7 @@ tbody td:first-child {
 
   .nav-wrap.nav-centered {
     grid-template-columns: 1fr auto;
-    min-height: 96px;
+    min-height: 108px;
   }
 
   .desktop-nav {
@@ -1150,30 +1149,18 @@ tbody td:first-child {
   }
 
   .brand-logo-large {
-    height: 82px;
-  }
-}
-
-@media (max-width: 1240px) {
-  .brand-logo-large {
     height: 96px;
-  }
-}
-
-@media (max-width: 1080px) {
-  .brand-logo-large {
-    height: 88px;
   }
 }
 
 @media (max-width: 760px) {
   .brand-logo-large {
-    height: 74px;
+    height: 78px;
   }
-}
 
-  .brand-logo-large {
-    height: 72px;
+  .nav-wrap.nav-centered {
+    min-height: 88px;
+    padding: 10px 0;
   }
 
   .section {
