@@ -562,6 +562,67 @@ video {
   background: #000;
 }
 
+/* JM Family partnership section */
+
+.partner-highlight {
+  background: #f8f5ef;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 88px 0;
+}
+
+.partner-highlight__inner {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.partner-highlight__logo {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-highlight__logo img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.partner-highlight__eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
+.partner-highlight__content h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.partner-highlight__content p {
+  margin: 0 0 16px;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.partner-highlight__actions {
+  margin-top: 24px;
+}
+
 /* Story */
 
 .brand-story {
@@ -1080,6 +1141,37 @@ tbody td:first-child {
   opacity: 1;
 }
 
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(216, 176, 108, 0.12);
+  border: 1px solid rgba(216, 176, 108, 0.35);
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.social-icon:hover {
+  background: rgba(216, 176, 108, 0.2);
+  border-color: rgba(216, 176, 108, 0.6);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(216, 176, 108, 0.18);
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #e3bd7a;
+}
+
 /* Reveal */
 
 .reveal {
@@ -1124,7 +1216,8 @@ tbody td:first-child {
   .product-layout,
   .distributor-grid,
   .contact-layout,
-  .two-panel {
+  .two-panel,
+  .partner-highlight__inner {
     grid-template-columns: 1fr;
   }
 
@@ -1156,6 +1249,11 @@ tbody td:first-child {
 
   .brand-logo-large {
     height: 102px;
+  }
+
+  .partner-highlight__logo {
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
 
@@ -1225,46 +1323,17 @@ tbody td:first-child {
   .contact-card {
     padding: 24px;
   }
-}
-.footer-links {
-  display: flex;
-  gap: 20px;
-  color: rgba(255, 255, 255, 0.78);
-  flex-wrap: wrap;
-  align-items: center;
-}
 
-.footer-links a:hover {
-  color: #fff;
-}
+  .partner-highlight {
+    padding: 64px 0;
+  }
 
-.social-icons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+  .partner-highlight__content {
+    text-align: center;
+  }
 
-.social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(216, 176, 108, 0.12);
-  border: 1px solid rgba(216, 176, 108, 0.35);
-  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.social-icon:hover {
-  background: rgba(216, 176, 108, 0.2);
-  border-color: rgba(216, 176, 108, 0.6);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(216, 176, 108, 0.18);
-}
-
-.social-icon svg {
-  width: 18px;
-  height: 18px;
-  fill: #e3bd7a;
+  .partner-highlight__content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
