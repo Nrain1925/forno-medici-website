@@ -37,50 +37,60 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap nav-centered">
-      <nav class="nav-links nav-left desktop-nav" aria-label="Primary left navigation">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="foodservice.html">Foodservice</a>
-      </nav>
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <span>Frozen Nationwide Shipping</span>
+    <span>Premium Italian Dough Balls</span>
+    <span>Wholesale Available</span>
+  </div>
+</div>
 
-      <a href="index.html" class="brand brand-center">
-        <img src="Forno-Medici-NewLogo.png" alt="Forno Medici Foods Logo" class="brand-logo-large" />
-      </a>
+<header class="site-header">
+  <div class="container nav-wrap nav-centered">
+    <nav class="nav-links nav-left desktop-nav" aria-label="Primary left navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html" class="shop-link">Shop</a>
+      <a href="products.html">Products</a>
+    </nav>
 
-      <nav class="nav-links nav-right desktop-nav" aria-label="Primary right navigation">
-        <a href="shop.html" class="active">Shop</a>
-        <a href="handling-performance.html">Handling &amp; Performance</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn-dark btn-small nav-cta" href="contact.html">Request Samples</a>
-      </nav>
+    <a href="index.html" class="brand brand-center">
+      <img src="Forno-Medici-NewLogo.png" alt="Forno Medici Foods Logo" class="brand-logo-large" />
+    </a>
 
-      <button
-        class="mobile-menu-toggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+    <nav class="nav-links nav-right desktop-nav" aria-label="Primary right navigation">
+      <a href="foodservice.html">Foodservice</a>
+      <a href="handling-performance.html">Preparation</a>
+      <a href="contact.html">Contact</a>
+      <a href="shop.html#shop" class="cart-link">Cart</a>
+      <a class="btn btn-dark btn-small nav-cta shop-cta" href="shop.html">Shop Now</a>
+    </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-      <nav class="mobile-menu-links" aria-label="Mobile navigation">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="foodservice.html">Foodservice</a>
-        <a href="shop.html" class="active">Shop</a>
-        <a href="handling-performance.html">Handling &amp; Performance</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn-dark mobile-cta" href="contact.html">Request Samples</a>
-      </nav>
-    </div>
-  </header>
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu-links" aria-label="Mobile navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html" class="shop-link">Shop</a>
+      <a href="products.html">Products</a>
+      <a href="foodservice.html">Foodservice</a>
+      <a href="handling-performance.html">Preparation</a>
+      <a href="contact.html">Contact</a>
+      <a href="shop.html#shop">Cart</a>
+      <a class="btn btn-dark mobile-cta shop-cta" href="shop.html">Shop Now</a>
+    </nav>
+  </div>
+</header>
 
   <main id="top">
     <section class="section light-section" style="padding:90px 0 40px;">
