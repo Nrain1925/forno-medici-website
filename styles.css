@@ -1495,3 +1495,31 @@ tbody td:first-child {
     margin-right: auto;
   }
 }
+.top-bar {
+  background: #221710;
+  color: #f3dfb5;
+  border-bottom: 1px solid rgba(216, 176, 108, 0.18);
+}
+
+.top-bar-inner {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .top-bar-inner {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 12px;
+    min-height: auto;
+    line-height: 1.4;
+  }
+}
